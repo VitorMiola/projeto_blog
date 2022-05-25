@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2? família= Inter:wght@600;800 & display=swap');
 
 :root{
-    --dark-grey: #212121;
-    --light-grey: #323232;
+    --black: #212121;
+    --charcoal: #323232;
     --prismarine: #0D7377;
     --teal: #14FFEC;
 }
@@ -13,45 +13,42 @@
 
 html, body {
     margin: 0;
-    background: var(--dark-grey);
+    background: var(--black);
+    font-weight: bold;
 }
 
-body, button, input, select, textarea{
-    font-family: 'Inter', sans-serif;
+body, button, input, select, textarea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
     color: white;
 }
 
-h1 {
-    font-size: 44px;
-    color: var(--prismarine);
-}
-
-h2 {
-    font-size: 24px;
-}
-/*define a margem e a gordura da fonte*/
 h1, h2 {
     margin: 0;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 p {
-    color: white;
-    font-weight: bold;
+    /* Sou um desenvolvedor amador de aplicações que às vezes funcionam. */
+
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
 }
 
 button {
     background: var(--prismarine);
     border: 0;
-    border-radius: 16px;
-    padding: 8px 35px;
+    border-radius: 15px;
+    padding: 8px 32px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-header{
-    /*background: red;*/
+header {
+    /* background: red; */
     height: calc(100vh - 65px);
     display: flex;
     align-items: center;
@@ -61,10 +58,15 @@ header .container {
     width: 50%;
     height: fit-content;
     padding: 0 100px;
+}   
+
+header .container img{
+    display: none;  
 }
 
 header .container h1 {
     color: var(--prismarine);
+    font-size: 48px;
 }
 
 nav {
@@ -72,18 +74,56 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 75px;
-    padding: 0 35px;
+    padding: 0 100px;
     position: sticky;
     top: 0;
 }
 
-nav img {
-    height: 45px;
-}
-nav ul a{
-    font-size: 24px;
-    color: white;
+nav ul a {
+    color: var(--teal);
+    font-size: 20px;
     text-decoration: none;
     margin: 0 35px;
-    font-weight: bold;
+}
+
+nav img {
+    height: 26px;
+}
+
+section{
+background: purple;
+    height: 1000px;
+}
+
+@media (max-width:767px) {
+    header .container{
+        width: 100%;
+    }
+    header .container img{
+        display: inline;
+        height: 55px;
+        margin-bottom: 75px;
+    }
+    nav img{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    header .container {
+        padding: 0 40px;
+    }
+
+    nav{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        padding: 0 15px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
+    
 }
