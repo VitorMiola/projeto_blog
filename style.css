@@ -29,6 +29,10 @@ h1, h2 {
     font-weight: 400;
 }
 
+h1{
+    font-weight: bold;
+}
+
 p {
     /* Sou um desenvolvedor amador de aplicações que às vezes funcionam. */
 
@@ -86,13 +90,31 @@ nav ul a {
     margin: 0 35px;
 }
 
-nav img {
-    height: 26px;
+nav ul a svg {
+    display: none;
 }
 
-section{
-background: purple;
-    height: 1000px;
+.about-me{
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container img {
+    width: 50%;
+    height: 100%;
+}
+
+.about-me .container h1{
+    color: var(--prismarine);
+}
+
+nav img {
+    height: 26px;
 }
 
 @media (max-width:767px) {
