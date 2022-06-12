@@ -6,42 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Projeto Blog</title>
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
 
   <body>
     <header>
       <div class="container">
-        <img src="assets/logo.png" alt="logo">
+        <img src="assets/logo.png" alt="logo" />
         <h2>Hello,</h2>
-        <h1>I'am Vitor Miola</h1>
-        <p>Sou aluno do IFPR - Campus Cascavel, estou no último ano do curso de Informática integrado ao ensino médio, gosto de trabalhos em grupo e de atividades práticas.</p>
+        <h1>I am Pablo</h1>
+        <p>Sou um desenvolvedor amador de aplicações que às vezes funcionam.</p>
         <button>Entre em contato</button>
       </div>
     </header>
     <nav>
-        <img src="assets/logo.png" alt="logo">
-        <ul>
-            <a href=""><i data-feather="user"></i>Sobre mim</a>
-            <a href=""><i data-feather="briefcase"></i>Serviços</a>
-            <a href=""><i data-feather="image"></i>Portfólio</a>
-            <a href=""><i data-feather="list"></i>Currículo</a>
-            <a href=""><i data-feather="send"></i>Contato</a>
-        </ul>
+      <img src="assets/logo.png" alt="logo" />
+      <ul>
+        <a href="#sobre-mim"><i data-feather="user"></i>Sobre mim</a>
+        <a href="#servicos"><i data-feather="briefcase"></i>Serviços</a>
+        <a href="#curriculo"><i data-feather="list"></i>Currículo</a>
+        <a href="#contato"><i data-feather="send"></i>Contato</a>
+      </ul>
     </nav>
-    <section class="about-me">
-        <div class="container">
-            <h1>Sobre mim</h1>
-            <p
-            >Nasci na cidade de Cascavel/PR,  atualmente<br> estou apenas estudando em ensino integrado.<br>
-                Gosto de matérias práticas e de praticar<br> esporte, pretendo fazer faculdade de Educação<br> Física.
-            </p>
+    <section class="about-me" id="sobre-mim">
+      <div class="container">
+        <h1 class="title-green">Sobre mim</h1>
+        <p>
+          Nasci em Cascavel, Paraná. Atualmente sou estudante do Instituto
+          Federal do Paraná - Campus Cascavel no 3º ano do curso técnico de
+          informática.
+          <br /><br />
+          Sou apaixonado por códigos, gosto de estudar sobre tecnologia e
+          entender como as coisas funcionam.
+        </p>
+      </div>
+      <div class="img-container">
+        <div class="line green"></div>
+        <div class="line purple"></div>
+        <img src="assets/about-me.jpeg" alt="Pablo Vinicius" />
+      </div>
+    </section>
+    <section class="servicos" id="servicos">
+      <h1 class="title-green">Serviços</h1>
+      <div class="servicos-container">
+        <div class="retangulo-servico">
+          <i data-feather="database"></i>
+          <h2>Desenvolvimento back-end</h2>
+          <p>
+            Desenvolvimento envolvendo servidores, bancos de dados, segurança e
+            estrutura.
+          </p>
         </div>
-        <div class="img-container">
-            <img src="assets/vitor.png" alt="Vitor Miola">
+        <div class="retangulo-servico">
+          <i data-feather="code"></i>
+          <h2>Desenvolvimento front-end</h2>
+          <p>
+            Desenvolvimento visual de aplicações web envolvendo HTML, CSS e
+            JavaScript.
+          </p>
         </div>
+        <div class="retangulo-servico">
+          <i data-feather="bar-chart-2"></i>
+          <h2>Ciência de dados</h2>
+          <p>
+            Análises de dados utilizando Python e suas bibliotecas: Pandas,
+            GeoPandas, Matplotlib e NumPy.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="curriculo" id="curriculo">
+      <h1 class="title-green">Currículo</h1>
+      <div class="container">
+        <img class="curriculo-img" src="assets/curriculo.png" />
+        <div class="conteudo">
+          <div class="curriculo-text">
+            <span>Nome</span> <b>Pablo Vinicius</b>
+            <span>Idade</span> <b>17 anos</b> 
+            <span>Formação</span> <b>Nenhuma</b> 
+            <span>Cidade</span> <b>Cascavel</b>
+            <span>Telefone</span> <b>45 99999-9999</b>
+            <span>Email</span> <b>viniciuspablo962@gmail.com</b>
+            <span>Exp</span> <b>HTML, CSS, JS, Python, MySQL</b>
+            <span>Idiomas</span> <b>Português, Inglês</b>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contato" id="contato">
+      <h1 class="title-purple">Vamos trabalhar juntos?</h1>
+      <p>
+        Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou
+        faça parte do seu time, entre em contato comigo!
+      </p>
+      <div class="social-media">
+        <i data-feather="instagram"></i>
+        <i data-feather="youtube"></i>
+        <i data-feather="linkedin"></i>
+      </div>
     </section>
     <script>
-        feather.replace()
+      feather.replace();
     </script>
   </body>
 </html>
