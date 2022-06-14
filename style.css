@@ -5,7 +5,6 @@
     --charcoal: #323232;
     --prismarine: #0D7377;
     --teal: #14FFEC;
-    --purple: #5280e2;
     --green: #15cdcb;
 }
 
@@ -31,7 +30,7 @@ h1, h2 {
 }
 
 p {
-    /* Sou um desenvolvedor amador de aplicações que às vezes funcionam. */
+    /* Primeira parte */
     font-size: 20px;
     line-height: 23px;
     text-align: justify;
@@ -39,7 +38,7 @@ p {
 
 button {
     /* Entre em contato */
-    background: var(--purple);
+    background: var(--prismarine);
     border: 0;
     border-radius: 15px;
     padding: 8px 32px;
@@ -48,20 +47,18 @@ button {
     font-size: 20px;
 }
 
-/* muda a fonte dos h1 com a classe 'title-purple' */
 .title-purple {
-    color: var(--purple);
+    color: var(--prismarine);
     font-size: 48px;
+    font-weight: bold;
 }
 
-/* muda a fonte dos h1 com a classe 'title-green' */
 .title-green {
     color: var(--green);
     font-size: 48px;
 }
 
 header {
-    /* background: red; */
     height: calc(100vh - 65px);
     display: flex;
     align-items: center;
@@ -78,7 +75,6 @@ header .container h1 {
     font-size: 48px;
 }
 
-/* Para não aparecer o logo quando for desktop */
 header .container img {
     display: none;  
 }
@@ -267,16 +263,14 @@ nav ul a svg {
     width: 50px;
 }
 
-/* Melhora a resposividade retirando a margim do 'nav ul a', pois a margim atrapalha quebrando muito facil */
 nav ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-/* Responsividade */
 
-/* Suporte para tablets */
+/* Tablets */
 @media (max-width:767px) {
     header .container{
         width: 100%;
@@ -293,7 +287,7 @@ nav ul {
     }
 } 
 
-/* Suporte para celulares com tela abaixo de 480px */
+/* Celulares */
 @media (max-width: 480px) {
     header .container {
         padding: 0 40px;
